@@ -78,7 +78,7 @@ header h1, .nav {
 }
 /* Configuração de Inicio */
 #inicio .apres {
-    background: no-repeat url(../src/laptop-bg.jpg);
+    background: no-repeat url(../img/laptop-bg.jpg);
     padding-top: 25%;
 }
 .apresTitle {
