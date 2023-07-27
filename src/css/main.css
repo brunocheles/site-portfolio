@@ -1,0 +1,266 @@
+/* Configuração Geral */
+h1, h2, h3, h4, a, p, article, input, textarea {
+    color: #33343F;
+    font-family: 'Avenir Light', Helvetica, sans-serif;
+}
+a, p {
+    font-size: 0.75rem;
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    text-transform: uppercase;
+}
+.socMedia a img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.socMedia li{
+    margin: 0.3rem 0 0 0;
+}
+header, .menu ul, .socMedia ul, .nav, .footer{
+    display: flex;
+}
+header, .footer {
+    flex-direction: column;
+}
+a, .socMedia a > img {
+    transition: 250ms linear;
+}
+a:hover, .socMedia a > img:hover {
+    background-color: #e7e7e7;
+    height: 1.8rem;
+    width: 1.8rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+}
+.secTitle {
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.negrito {
+    font-weight: bold;
+}
+.apres p > span, .frasesMot p {
+    font-size: 1rem;
+}
+.motiv, #sobre, #projetos, #curriculo, #contato {
+    margin-top: 0.4rem;
+}
+.frasesMot, .secSobre, .mostrarProjetos, .secoes, #contato {
+    display: grid;
+}
+
+/* Configuração de Header */
+#headerTitle {
+    font-size: 1.6rem;
+    margin: 2rem 0 2rem 0.5rem;
+}
+header h1, .nav {
+    padding: 0 4rem;
+}
+.nav {
+    justify-content: space-between;
+    background-color: #efefef;
+}
+.menu{
+    margin-top: 0.5rem;
+}
+.menu ul, .socMedia ul, .nav {
+    flex-direction: row;
+}
+.nav .menu a {
+    padding: 0.5rem;
+}
+.nav .menu li ~ li, .socMedia li ~ li {
+    margin-left: 0.3rem;
+}
+/* Configuração de Inicio */
+#inicio .apres {
+    background: no-repeat url(../src/laptop-bg.jpg);
+    padding-top: 25%;
+}
+.apresTitle {
+    background-color: rgba(340, 340, 340, 0.6);
+    padding: 3rem 0;
+}
+.apres p {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.pontosPos {
+    margin: 1.5rem 0 0.5rem 0;
+}
+.apres p > span ~ span {
+    margin-left: 1rem;
+}
+.motiv {
+    background-color: #33343F;
+}
+.motiv .frasesMot {
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows:  8fr 1fr;
+}
+.frasesMot p {
+    color: #f3f3f3;
+}
+.frasesMot .frases {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 7rem 0;
+}
+.frasesMot .nome {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 2;
+}
+.vejaMais p {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+/* Configuração de Seções */
+.secoes {
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#sobre, #projetos, #curriculo, #contato {
+    grid-column: 2;
+}
+
+/* Configuração de Sobre */
+.secSobre {
+    grid-template: "main main main"
+                   "divis divis divis"
+                   "secum secum asum"
+                   "asdois secdois secdois";
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.grid-1-3 {
+    grid-area: main;
+}
+.grid-2-2 {
+    grid-area: secum;
+}
+.grid-2-1 {
+    grid-area: asum;
+}
+.grid-3-2 {
+    grid-area: secdois;
+}
+.grid-3-1 {
+    grid-area: asdois;
+}
+.secSobre img {
+    height: 20rem;
+}
+.secoes h3, .secoes h2, .secoes h4{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.2rem;
+}
+.divis {
+    text-align: center;
+    grid-area: divis;
+    text-transform: uppercase;
+}
+.secSobre, #sobre .secTitle {
+    grid-column: 2;
+}
+.artMain {
+    padding: 0.5rem 0 1rem 0;
+}
+/* Configuração de Projetos Pessoais */
+#projetos {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+#projetos h3 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+.mostrarProjetos {
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+/* Configuração de Curriculo */
+
+/* Configuração de Contato */
+#contato {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20rem;
+}
+#contato p, #contato a {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+}
+#contato a:hover {
+    font-size: 1.1rem;
+    background-color: #f7f7f7;
+}
+.dadosContato {
+    text-align: center;
+    grid-column: 1;
+}
+.dadosSugestoes > p {
+    text-align: center;
+}
+.dadosSugestoes #tel, .dadosSugestoes #assunto, .dadosSugestoes #msg {
+    width: 100%;
+}
+#emailENome{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+#contato .dadosSugestoes .nome{
+    margin-right: 1rem;
+}
+#email, #name, .nome, .email {
+    width: 100%;
+}
+.dadosSugestoes input, .dadosSugestoes textarea {
+    border-bottom: 0.1rem solid #33343F;
+}
+.dadosSugestoes input:hover, .dadosSugestoes textarea:hover {
+    border: 0.1rem solid #33343F;
+    transition: 250ms linear;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+}
+.dadosSugestoes input:focus, .dadosSugestoes textarea:focus {
+    font-size: 1rem;
+    border: 0.1rem solid #33343F;
+    border-radius: 0.2rem;
+}
+.dadosSugestoes input[type=button] {
+    border-bottom: none;
+}
+.dadosSugestoes input[type=button]:focus, .dadosSugestoes input[type=button]:hover{
+    border: none;
+    transition: none;
+    cursor: pointer;
+    background-color: rgba(51, 52, 63, 0.8);
+}
+#msg {
+    resize: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Configuração de Footer */
+.footer {
+    align-items: center;
+    background-color: #efefef;
+    padding: 0.6rem 0 0.1rem 0;
+}
+.footer p {
+    padding: 0.5rem 0;
+}
