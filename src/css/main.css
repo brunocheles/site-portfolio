@@ -27,7 +27,7 @@ header, .footer {
 a, .socMedia a > img {
     transition: 250ms linear;
 }
-a:hover, .socMedia a > img:hover {
+.menu ul li > a:hover, .socMedia a > img:hover {
     background-color: #e7e7e7;
     height: 1.8rem;
     width: 1.8rem;
@@ -53,9 +53,12 @@ a:hover, .socMedia a > img:hover {
 }
 
 /* Configuração de Header */
+.menu-mobile {
+    display: none;
+}
 #headerTitle {
     font-size: 1.6rem;
-    margin: 2rem 0 2rem 0.5rem;
+    margin: 1.5rem 0 1.5rem 0.5rem;
 }
 header h1, .nav {
     padding: 0 4rem;
@@ -125,6 +128,7 @@ header h1, .nav {
 /* Configuração de Seções */
 .secoes {
     grid-template-columns: 1fr 3fr 1fr;
+    height: 100%;
 }
 #sobre, #projetos, #curriculo, #contato {
     grid-column: 2;
@@ -155,7 +159,7 @@ header h1, .nav {
     grid-area: asdois;
 }
 .secSobre img {
-    height: 20rem;
+    width: 20vw;
 }
 .secoes h3, .secoes h2, .secoes h4{
     text-align: center;
@@ -195,7 +199,7 @@ header h1, .nav {
 /* Configuração de Contato */
 #contato {
     grid-template-columns: 1fr 1fr;
-    column-gap: 20rem;
+    column-gap: 15%;
 }
 #contato p, #contato a {
     font-size: 1rem;
@@ -209,6 +213,9 @@ header h1, .nav {
 .dadosContato {
     text-align: center;
     grid-column: 1;
+}
+.dadosSugestoes {
+    grid-column: 2;
 }
 .dadosSugestoes > p {
     text-align: center;
@@ -263,4 +270,146 @@ header h1, .nav {
 }
 .footer p {
     padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
+    #contato {
+        column-gap: 5%;
+    }
+    .secSobre img {
+        width: 25vw;
+    }
+}
+@media only screen and (max-width: 899px) {
+    /* Menu mobile */
+    .nav {
+        display: block;
+        padding: 0 2rem;
+    }
+    .nav .socMedia, #toggle {
+        display: none;
+    }
+    .menu {
+        margin-top: 0.3rem;
+        position: relative;
+    }
+    .menu-mobile {
+        display: block;
+        float: right;
+        padding: 0.2rem;
+        cursor: pointer;
+        position: relative;
+        width: 1.3rem;
+        height: 1.2rem;
+    }
+    .menu-mobile i {
+        font-size: 1.8rem;
+    }
+    #navMenu {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        transition: max-height 600ms ease-in-out !important;
+        max-height: 15rem;
+        pointer-events: all;
+    }
+    .menu ul li {
+        text-align: center;
+    }
+    .menu ul li a {
+        font-size: 1rem;
+    }
+    .menu ul li ~ li {
+        margin-top: 1rem !important;
+    }
+    #headerTitle {
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+    .secTitle {
+        font-size: 2.5rem;
+    }
+    .secSobre img {
+        width: 30vw;
+    }
+    /* Menu Icons */
+    #menu-icons {
+        display: block;
+        width: 1.3rem;
+        height: 0.2rem;
+        background-color: #33343F;
+        position: absolute;
+        cursor: pointer;
+        top: 0.55rem;
+        transition-delay: 250ms;
+        
+        &::before, &::after {
+            content: '';
+            width: 1.3rem;
+            height: 0.2rem;
+            background-color: #33343F;
+            position: absolute;
+            display: block;
+            transition: all 400ms var(--animation-curve);
+        }
+        &::before {
+            top: -200%;
+            left: 0%;
+            transform-origin: left top;
+            transform: rotateZ(0deg);
+        }
+        &::after {
+            bottom: -200%;
+            left: 0%;
+            transform-origin: left bottom;
+            transform: rotateZ(0deg);
+        }
+    }
+    #toggle:checked ~ label::before {
+        transform: rotateZ(41deg);
+    }
+    #toggle:checked ~ label::after {
+        transform: rotateZ(-41deg);
+    }
+    #toggle:checked ~ label {
+        background-color: #efefef;
+        transition: all 200ms;
+    }
+    .hideMenuMobile {
+        max-height: 0 !important;
+        pointer-events: none !important;
+    }
+    /* ----------- */
+    .frasesMot, .secoes {
+        display: block;
+        padding: 0 4% 0 4%;
+    }
+    .frases {
+        padding: 5rem 2rem;
+    }
+    .nome {
+        padding: 0 0 2% 2rem;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .nav .menu li ~ li {
+        margin-left: 0;
+    }
+    .nav .menu li {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    #contato {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        column-gap: 0;
+    }
+    .dadosContato {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .dadosSugestoes {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }

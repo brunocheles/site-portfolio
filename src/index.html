@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <script type="text/javascript" src="./js/cmds.js"></script>
     <title>brunocheles</title>
 </head>
 <body>
@@ -13,7 +14,12 @@
         <h1 class="title" id="headerTitle">brunocheles</h1>
         <div class="nav">
             <nav class="menu">
-                <ul>
+                <div class="menu-mobile">
+                    <input type="checkbox" name="toggle" id="toggle">
+                    <label for="toggle" id="menu-icons" onclick="hideMenuMobile()"></label>
+                </div>
+                
+                <ul id="navMenu" class="hideMenuMobile">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
@@ -142,5 +148,6 @@
             <p>&copy;2023 criado por Bruno Cheles</p>
         </div>
     </footer>
+    <!-- Scripts -->
 </body>
 </html>

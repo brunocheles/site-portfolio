@@ -85,3 +85,6 @@ input[type=button] {
 	border-radius: 0.2rem;
 	outline: none;
 }
+:root {
+	--animation-curve: cubic-bezier(1,0,0,1);
+}
