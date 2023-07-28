@@ -284,7 +284,7 @@ header h1, .nav {
     /* Menu mobile */
     .nav {
         display: block;
-        padding: 0 2rem;
+        padding: 0.2rem 2rem;
     }
     .nav .socMedia, #toggle {
         display: none;
@@ -329,14 +329,17 @@ header h1, .nav {
     .secTitle {
         font-size: 2.5rem;
     }
+    h2 {
+        font-size: 2rem;
+    }
     .secSobre img {
         width: 30vw;
     }
     /* Menu Icons */
     #menu-icons {
         display: block;
-        width: 1.3rem;
-        height: 0.2rem;
+        width: 1.8438rem;
+        height: 0.28rem;
         background-color: #33343F;
         position: absolute;
         cursor: pointer;
@@ -345,8 +348,8 @@ header h1, .nav {
         
         &::before, &::after {
             content: '';
-            width: 1.3rem;
-            height: 0.2rem;
+            width: 1.8438rem;
+            height: 0.28rem;
             background-color: #33343F;
             position: absolute;
             display: block;
