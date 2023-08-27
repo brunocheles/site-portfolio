@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
     <script type="text/javascript" src="./js/cmds.js"></script>
     <title>brunocheles</title>
 </head>
 <body>
-    <header>
-        <h1 class="title" id="headerTitle">brunocheles</h1>
-        <div class="nav">
+    <header class="header-menu">
+        <div class="grid nav-header grid-col-131">
+            <div class="progresso">
+                <div class="barra-progresso">
+                    
+                </div>
+            </div>
+            <h1 class="titulo">
+                <a href="./index.html">BrunoCheles</a>
+            </h1>
             <nav class="menu">
                 <div class="menu-mobile">
                     <input type="checkbox" name="toggle" id="toggle">
                     <label for="toggle" id="menu-icons" onclick="hideMenuMobile()"></label>
                 </div>
                 
-                <ul id="navMenu" class="hideMenuMobile">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#curriculo">Currículo</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <nav class="socMedia">
-                <ul>
-                    <li><a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn"></a></li>
-                    <li><a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a></li>
+                <ul class="flex menu-base">
+                    <li><a href="./pages/about.html">Sobre</a></li>
+                    <li><a href="./pages/projects.html">Projetos</a></li>
+                    <li><a href="./pages/contact.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,116 +38,90 @@
     
     <main>
         <section id="inicio">
-            <div class="apres">
-                <div class="apresTitle">
-                    <p class="secTitle">Site Portfólio de</p>
-                    <p class="secTitle negrito">Bruno Cheles</p>
-                    <p class="pontosPos"><span>Proativo.</span><span>Flexível.</span><span>Analítico.</span></p>
+            <div class="apresentacao grid grid-col-131">
+                <div class="apres-content">
+                    <h5>Proativo | Flexível | Analítico</h5>
+                    <h3>desenvolvedor FullStack e estudante de Análise e Desenvolvimento de Sistemas.</h3>
                 </div>
             </div>
-            <div class="motiv">
-                <div class="frasesMot">
-                    <p class="frases negrito">Algumas frases motivacionais.</p>
-                    <p class="nome">Ronaldo</p>
+
+            <div class="frases-motivacionais grid grid-col-131">
+                <div class="blocos-frases-motivacionais">
+                    <p>Algumas frases motivacionais.</p>
+                    <p>Ronaldo</p>
                 </div>
-                
-            </div>
-            <div class="vejaMais">
-                <p>Veja um pouco mais sobre mim a seguir</p>
             </div>
         </section>
 
-        <div class="secoes">
-            <section id="sobre">
-                <p class="secTitle">sobre mim</p>
-                <div class="secSobre">
-                    <article class="grid-1-3 artMain">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore voluptatum quis, rem corporis amet qui sit aperiam nihil voluptatibus, maxime, commodi optio id inventore adipisci quia iure aliquam necessitatibus!</p>
-                        <h4>Formação</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque itaque nesciunt necessitatibus molestias pariatur atque, laudantium, recusandae, est soluta assumenda nihil velit quae quod consequuntur doloremque rem impedit ex alias!</p>
-                    </article>
-                    <h2 class="divis">Principais Hobbies</h2>
-                    <article class="grid-2-2">
-                        <h3>Teatro</h3>
-                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, labore! Maiores neque architecto eum deserunt in voluptas alias, aperiam atque dolor, assumenda modi, voluptatibus corporis eaque. Explicabo, alias. Voluptatum, architecto.</article>
-                    <aside class="grid-2-1"><img src="./img/img-teatro.jpg" alt="Foto da peça Sociedade dos Poetas Mortos"></aside>
-                    <article class="grid-3-2">
-                        <h3>Outros</h3>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, similique corrupti? Nisi, voluptate doloremque omnis aliquam dolores asperiores eveniet et sequi dolore veritatis facilis laborum, qui officia blanditiis, ipsam consequatur?</article>
-                        <aside class="grid-3-1"><img src="./img/img-teatro.jpg" alt="Foto da peça Sociedade dos Poetas Mortos"></aside>
-                </div>
-            </section>
-            <section id="projetos">
-                <h3>Projetos Pessoais</h3>
-                <div class="mostrarProjetos">
-                    <div>projeto 1</div>
-                    <div>projeto 2</div>
-                    <div>projeto 3</div>
-                </div>
-            </section>
-            <section id="curriculo">
-                <p class="secTitle">Currículo</p>
-                <h3>Experiência profissional</h3>
-                <section class="expPro">
+        <section id="projects-prev">
+            <div class="grid grid-col-131">
+                <div class="projects-preview">
+                    <div class="about-preview">
+                        <h4>Sempre em busca da evolução profissional, estou em busca de participar de projetos e desenvolver os meus próprios, para que consiga ganhar ainda mais experiência como desenvolvedor.<br>Atualmente tenho focado nas linguagens:</h4>
+                        <ul class="lista-linguagens flex">
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" title="CSharp"/></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" title="Flutter"/></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript"/></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java"/></li>
+                        </ul>
 
-                </section>
-                <h3>Cursos</h3>
-                <section class="cursos">
-
-                </section>
-            </section>
-            <section id="contato">
-                <div class="dadosContato">
-                    <h2>Entre em contato</h2>
-                    <p>R. Salvador Potério - Jardim Alexandre Balbo, Ribeirão Preto - SP, 14066-117, Brasil</p>
-                    <p><a href="mailto:bruno.cheles@outlook.com">bruno.cheles@outlook.com</a></p>
-                    <p><a href="tel:+5516991325478">(16) 99132-5478</a></p>
-                </div>
-                <div class="dadosSugestoes">
-                    <form action="" method="get">
-                        <div id="emailENome">
-                            <p class="nome">
-                                <label for="name">Nome *</label> <br>
-                                <input type="text" name="name" id="name" placeholder="Insira seu nome">
-                            </p>
-                            <p class="email">
-                                <label for="email">Email *</label> <br>
-                                <input type="email" name="email" id="email" placeholder="Insira seu email">
-                            </p>
+                        <a href="./pages/about.html">Saber Mais</a>
+                    </div>
+                    <div id="blocos-projetos" class="flex">
+                        <div class="bloco my-contab" onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
+                            <div class="text-img-proj hidden teste1">
+                                <p>MyContab</p>
+                            </div>
                         </div>
-                        <p>
-                            <label for="tel">Telefone</label> <br>
-                            <input type="tel" name="tel" id="tel" placeholder="Insira seu telefone">
-                        </p>
-                        <p>
-                            <label for="assunto">Assunto</label> <br>
-                            <input type="text" name="assunto" id="assunto" placeholder="Insira o assunto">
-                        </p>
-                        <p>
-                            <label for="msg">Mensagem</label> <br>
-                            <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Insira sua mensagem"></textarea>
-                        </p>
-                        <input type="button" value="Enviar">
-                    </form>
-                    <p>Obrigado(a/e)!</p>
+                        <div class="bloco bootcamp-santander" onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
+                            <div class="text-img-proj hidden">
+                                <p>Bootcamp<br>Santander</p>
+                            </div>
+                        </div>
+                        <div class="bloco ribeirao-em-cena"  onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
+                            <div class="text-img-proj hidden">
+                                <p>Ribeirão<br>enCena</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-proj-btn">
+                        <a href="./pages/projects.html">Todos os Projetos</a>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="to-contact grid grid-col-131">
+                <div class="contact-preview">
+                    <h3>Gostou do que foi apresentado?</h3>
+                    <p>Fique à vontade para entrar em contato comigo para fazer propostas, pedir ajuda ou indicar melhorias.<br>Juntos crescemos mais rápidos!</p>
+                    <div class="contact-btn">
+                        <a href="./pages/contact.html">Entrar em contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <h4 class="title negrito">brunocheles</h4>
-            <p>bruno.cheles@outlook.com</p>
-            <nav class="socMedia">
-                <ul>
-                    <li><a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn"></a></li>
-                    <li><a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a></li>
-                </ul>
-            </nav>
-            <p>&copy;2023 criado por Bruno Cheles</p>
+    <footer class="page-footer">
+        <div class="grid grid-col-131">
+            <div class="foot flex">
+                <div class="foot-marca">
+                    <h4>brunocheles</h4>
+                    <p>bruno.cheles@outlook.com</p>
+                    <p><span>brunocheles&copy;</span> 2023 - criado por Bruno Cheles</p>
+                </div>
+                
+                <nav class="social-media">
+                    <h4>Redes Sociais</h4>
+                    <ul class="flex">
+                        <li><a href="#"><img src="./img/icon-linkedin-white.svg" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="./img/icon-github-white.svg" alt="GitHub"></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </footer>
-    <!-- Scripts -->
 </body>
 </html>

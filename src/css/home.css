@@ -1,0 +1,119 @@
+/* Configuração de Inicio */
+.apresentacao {
+    margin-bottom: 8rem;
+    padding: 3rem 0;
+}
+.apres-content {
+    justify-content: center;
+    text-transform: uppercase;
+}
+.apres-content h3{
+    margin-top: 1.5rem;
+    width: 60%;
+    line-height: 2.5rem;
+}
+main a {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #33343F;
+    border: 2px solid #33343F;
+    padding: 1.3rem 3rem;
+    margin-top: 2rem;
+    transition: ease-in-out 200ms;
+    border-radius: 3px;
+}
+main a:hover{
+    background-color: #33343F;
+    color: #FEFEFE;
+}
+.about-preview h4 {
+    width: 55%;
+}
+.frases-motivacionais {
+    background-color: #33343F;
+    padding: 10rem 0 1rem 0;
+}
+.frases-motivacionais p {
+    color: #FEFEFE;
+}
+.frases-motivacionais p:first-child {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 8.5rem;
+}
+
+/* Configuração de Preview de Projetos */
+#projects-prev {
+    background-color: #FAFBFF;
+    padding: 3rem 0;
+}
+.projects-preview {
+    grid-column: 2;
+}
+.lista-linguagens {
+    margin-top: 0.7rem;
+    width: 50%;
+    justify-content: center;
+}
+.lista-linguagens > li ~ li {
+    margin-left: 0.2rem;
+}
+.lista-linguagens > li > img {
+    height: 2.5rem;
+}
+.all-proj-btn {
+    text-align: center;
+}
+#blocos-projetos {
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.bloco {
+    width: 150pt;
+    height: 150pt;
+    position: relative;
+    transition: ease-in-out 200ms;
+}
+.bloco:hover {
+    transform: scale(1.1);
+}
+.text-img-proj {
+    height: 4rem;
+    width: 100%;
+    background-color: rgba(51,52,63,0.7);
+    position: absolute;
+    bottom: 0;
+    transition: ease-in-out 200ms;
+}
+.bloco > div > p {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    color: #FEFEFE;
+}
+.my-contab {
+    background: no-repeat center/95% url(../img/logo-mycontab.png);
+}
+.bootcamp-santander {
+    background: no-repeat center/95% url(https://hermes.dio.me/tracks/afebe5ed-2b18-438a-95b0-2c971e9aeff9.png);
+}
+.ribeirao-em-cena {
+    background: no-repeat center/95% url(../img/ribeirao-encena.svg);
+}
+
+/* Configurações do Preview de Contato */
+.to-contact {
+    padding: 3rem 0;
+}
+.contact-preview {
+    grid-column: 2;
+    text-align: center;
+    justify-content: center;
+}
+.contact-preview > p {
+    width: 50%;
+    display: inline-block;
+    margin-top: 2rem;
+}

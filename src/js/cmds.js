@@ -7,3 +7,11 @@ function hideMenuMobile() {
         document.getElementById("navMenu").classList.remove("hideMenuMobile");
     }
 }
+
+function showTextProj(element) {
+    element[0].classList.remove("hidden");
+}
+
+function hideTextProj(element) {
+    element[0].classList.add("hidden");
+}

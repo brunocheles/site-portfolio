@@ -1,0 +1,45 @@
+/* Configuração de Sobre */
+.sobre {
+    grid-column: 2;
+}
+.sobre h3, .sobre h4 {
+    text-align: center;
+}
+.sobre h3{
+    margin: 1rem 0 2rem;
+}
+.sobre article h4 {
+    margin-bottom: 1rem;
+}
+.hobbie1 {
+    margin-bottom: 2rem;
+}
+.hobbie-img, .hobbie-img2 {
+    height: 220pt;
+    width: 170pt;
+}
+.hobbie-img {
+    background: no-repeat left 10%/100% url(../img/img-teatro.jpg);
+}
+.hobbie-img2 {
+    background: no-repeat right/100% url(../img/gif-bateria.gif);
+}
+.hobbie1 article p{
+    margin-left: 2rem;
+}
+.hobbie2 article p {
+    margin-right: 2rem;
+}
+
+/* Configuração de Curriculo */
+#curriculo .sec-title {
+    padding-bottom: 0.5rem;
+}
+.sub-title {
+    color: #72748C;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.expro {
+    grid-column: 2;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/projects.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <script type="text/javascript" src="../js/cmds.js"></script>
+    <title>brunocheles</title>
+</head>
+<body>
+    <header class="header-menu">
+        <div class="grid nav-header grid-col-131">
+            <div class="progresso">
+                <div class="barra-progresso">
+                    
+                </div>
+            </div>
+            <h1 class="titulo">
+                <a href="../index.html">BrunoCheles</a>
+            </h1>
+            <nav class="menu">
+                <div class="menu-mobile">
+                    <input type="checkbox" name="toggle" id="toggle">
+                    <label for="toggle" id="menu-icons" onclick="hideMenuMobile()"></label>
+                </div>
+                
+                <ul class="flex menu-base">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./about.html">Sobre</a></li>
+                    <li><a href="./contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="projetos" class="grid grid-col-131">
+            <div class="projetos">
+                <h3 class="sec-title">Projetos Pessoais</h3>
+                <div id="blocos-projetos" class="flex flex-row">
+                    <div class="bloco my-contab" onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
+                        <div class="text-img-proj hidden teste1">
+                            <p>MyContab</p>
+                        </div>
+                    </div>
+                    <div class="bloco bootcamp-santander" onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
+                        <div class="text-img-proj hidden">
+                            <p>Bootcamp<br>Santander</p>
+                        </div>
+                    </div>
+                    <div class="bloco ribeirao-em-cena"  onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
+                        <div class="text-img-proj hidden">
+                            <p>Ribeirão<br>em Cena</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="grid grid-col-131">
+            <div class="foot flex">
+                <div class="foot-marca">
+                    <h4>brunocheles</h4>
+                    <p>bruno.cheles@outlook.com</p>
+                    <p><span>brunocheles&copy;</span> 2023 - criado por Bruno Cheles</p>
+                </div>
+                
+                <nav class="social-media">
+                    <h4>Redes Sociais</h4>
+                    <ul class="flex">
+                        <li><a href="#"><img src="../img/icon-linkedin-white.svg" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="../img/icon-github-white.svg" alt="GitHub"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
