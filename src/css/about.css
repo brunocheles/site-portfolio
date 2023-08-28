@@ -1,12 +1,86 @@
+/* Configuração inicial */
+.sec-title {
+    padding-top: 3rem;
+}
+.conhecimento {
+    grid-column: 2;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+.con-texto > h3{
+    text-align: left;
+    margin: 1rem 0;
+}
+.con-img {
+    margin-left: 3rem;
+}
+.con-img img {
+    width: 26rem;
+    border-radius: 3px;
+}
+/* Configuração da tabela */
+table {
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+.tb-title {
+    background-color: #33343F;
+    font-size: 1.5rem;
+    color: #FAFBFF;
+    border: 2px solid #72748C;
+    text-transform: uppercase;
+}
+.tb-title th {
+    padding: 0.3rem 0;
+}
+.tb-info {
+    background-color: #33343F;
+    color: #FAFBFF;
+    border: 2px solid #72748C;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.2rem;
+}
+tbody .tb-info {
+    margin: auto;
+}
+.tb-info > th {
+    border: 2px solid #72748C;
+    padding: 0.2rem;
+}
+tbody tr td {
+    background-color: #FAFBFF;
+    border: 2px solid #72748C;
+    text-align: center;
+}
+tbody td img {
+    width: 2rem;
+    vertical-align: middle;
+    margin: auto;
+    padding: 0.2rem 0;
+}
 /* Configuração de Sobre */
+#sobre {
+    background-color: #33343F;
+}
 .sobre {
     grid-column: 2;
+    padding-bottom: 2rem;
+}
+.sobre .sec-title {
+    color: #FAFBFF;
+}
+.sobre p {
+    color: #FAFBFF;
 }
 .sobre h3, .sobre h4 {
     text-align: center;
+    color: #FAFBFF;
 }
 .sobre h3{
-    margin: 1rem 0 2rem;
+    margin: 2rem 0;
 }
 .sobre article h4 {
     margin-bottom: 1rem;
@@ -17,6 +91,7 @@
 .hobbie-img, .hobbie-img2 {
     height: 220pt;
     width: 170pt;
+    border-radius: 3px;
 }
 .hobbie-img {
     background: no-repeat left 10%/100% url(../img/img-teatro.jpg);
@@ -32,6 +107,12 @@
 }
 
 /* Configuração de Curriculo */
+#curriculo {
+    background-color: #FAFBFF;
+}
+.experienca-pro {
+    padding-bottom: 2rem;
+}
 #curriculo .sec-title {
     padding-bottom: 0.5rem;
 }
@@ -42,4 +123,94 @@
 }
 .expro {
     grid-column: 2;
+}
+.expro aside {
+    width: 25rem;
+    min-width: 16rem;
+}
+.expro > div ~ div {
+    margin-top: 2rem;
+}
+.expro article {
+    display: flex;
+}
+.expro article p {
+    color: #72748C;
+}
+.expro1 article::before, .expro3 article::before {
+    content: "";
+    height: 100%;
+    display: block;
+    border: 0.15rem solid #33343F;
+    border-radius: 3px;
+    margin: 0 1rem;
+}
+.expro2 article::after, .expro4 article::after {
+    content: "";
+    height: 100%;
+    display: block;
+    border: 0.15rem solid #33343F;
+    border-radius: 3px;
+    margin: 0 1rem;
+} 
+.expro1 aside, .expro3 aside {
+    text-align: right;
+}
+.expro2 aside, .expro4 aside {
+    text-align: left;
+}
+.expro-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.expro-title::after {
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    display: block;
+    background-color: #33343F;
+    border-radius: 3px;
+}
+.expro-data {
+    font-size: 0.9rem;
+    padding: 0.1rem 0;
+}
+
+/* Configuração Formação Acadêmica */
+#formacao {
+    background-color: #fefefe;
+}
+.formacao {
+    grid-column: 2;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.sep-vert {
+    height: 100%;
+    display: block;
+    border: 0.15rem solid #33343F;
+    border-radius: 3px;
+    margin: 0 1rem;
+}
+.form-acad > h3, .form-acad > .expro-data, .form-acad > .expro-cargo, .form-acad > .expro-title {
+    text-align: right;
+}
+.form-acad > h3, .cursos > h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+.cursos > h3{
+    text-align: left;
+}
+.form-acad > p {
+    color: #72748C;
+}
+.form-acad .expro-title::after {
+    background-color: #72748C;
+}
+.blocos-cursos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }

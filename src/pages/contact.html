@@ -37,40 +37,42 @@
     </header>
 
     <main>
-        <section>
-            <div>
-                <h3>Entre em contato</h3>
-                <p>R. Salvador Potério - Jardim Alexandre Balbo, Ribeirão Preto - SP, 14066-117, Brasil</p>
-                <p><a href="mailto:bruno.cheles@outlook.com">bruno.cheles@outlook.com</a></p>
-                <p><a href="tel:+5516991325478">(16) 99132-5478</a></p>
-            </div>
-            <div>
-                <form action="" method="get">
-                    <div id="emailENome">
-                        <p class="nome">
-                            <label for="name">Nome *</label> <br>
-                            <input type="text" name="name" id="name" placeholder="Insira seu nome" required>
+        <section id="contato" class="grid grid-col-131">
+            <div class="contato flex">
+                <div class="dadosContato">
+                    <h3>Entre em contato</h3>
+                    <p>R. Salvador Potério - Jardim Alexandre Balbo, Ribeirão Preto - SP, 14066-117, Brasil</p>
+                    <p><a href="mailto:bruno.cheles@outlook.com">bruno.cheles@outlook.com</a></p>
+                    <p><a href="tel:+5516991325478">(16) 99132-5478</a></p>
+                </div>
+                <div class="dadosSugestoes">
+                    <form action="" method="get">
+                        <div id="emailENome">
+                            <p class="nome">
+                                <label for="name">Nome *</label> <br>
+                                <input type="text" name="name" id="name" placeholder="Insira seu nome" required>
+                            </p>
+                            <p class="email">
+                                <label for="email">Email *</label> <br>
+                                <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                            </p>
+                        </div>
+                        <p>
+                            <label for="tel">Telefone</label> <br>
+                            <input type="tel" name="tel" id="tel" placeholder="Insira seu telefone">
                         </p>
-                        <p class="email">
-                            <label for="email">Email *</label> <br>
-                            <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                        <p>
+                            <label for="assunto">Assunto</label> <br>
+                            <input type="text" name="assunto" id="assunto" placeholder="Insira o assunto" required>
                         </p>
-                    </div>
-                    <p>
-                        <label for="tel">Telefone</label> <br>
-                        <input type="tel" name="tel" id="tel" placeholder="Insira seu telefone">
-                    </p>
-                    <p>
-                        <label for="assunto">Assunto</label> <br>
-                        <input type="text" name="assunto" id="assunto" placeholder="Insira o assunto" required>
-                    </p>
-                    <p>
-                        <label for="msg">Mensagem</label> <br>
-                        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Insira sua mensagem" required></textarea>
-                    </p>
-                    <input type="button" value="Enviar">
-                </form>
-                <p>Obrigado(a/e)!</p>
+                        <p>
+                            <label for="msg">Mensagem</label> <br>
+                            <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Insira sua mensagem" required></textarea>
+                        </p>
+                        <input type="button" value="Enviar">
+                    </form>
+                    <p>Obrigado(a/e)!</p>
+                </div>
             </div>
         </section>
     </main>

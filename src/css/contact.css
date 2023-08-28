@@ -1,1 +1,69 @@
 /* Configuração de Contato */
+.contato {
+    grid-column: 2;
+    justify-content: space-around;
+}
+#contato p, #contato a {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+}
+#contato a:hover {
+    font-size: 1.1rem;
+    background-color: #f7f7f7;
+}
+.dadosContato {
+    text-align: left;
+    grid-column: 1;
+}
+.dadosContato h3 {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+.dadosSugestoes {
+    grid-column: 2;
+}
+.dadosSugestoes > p {
+    text-align: center;
+}
+.dadosSugestoes #tel, .dadosSugestoes #assunto, .dadosSugestoes #msg {
+    width: 100%;
+}
+#emailENome{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+#contato .dadosSugestoes .nome{
+    margin-right: 1rem;
+}
+#email, #name, .nome, .email {
+    width: 100%;
+}
+.dadosSugestoes input, .dadosSugestoes textarea {
+    border-bottom: 0.1rem solid #33343F;
+}
+.dadosSugestoes input:hover, .dadosSugestoes textarea:hover {
+    border: 0.1rem solid #33343F;
+    transition: 250ms linear;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+}
+.dadosSugestoes input:focus, .dadosSugestoes textarea:focus {
+    font-size: 1rem;
+    border: 0.1rem solid #33343F;
+    border-radius: 0.2rem;
+}
+.dadosSugestoes input[type=button] {
+    border-bottom: none;
+}
+.dadosSugestoes input[type=button]:focus, .dadosSugestoes input[type=button]:hover{
+    border: none;
+    transition: none;
+    cursor: pointer;
+    background-color: rgba(51, 52, 63, 0.8);
+}
+#msg {
+    resize: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

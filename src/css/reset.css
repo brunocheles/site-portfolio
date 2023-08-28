@@ -92,3 +92,6 @@ input[type=button] {
 :root {
 	--animation-curve: cubic-bezier(1,0,0,1);
 }
+b {
+	font-weight: 700;
+}
