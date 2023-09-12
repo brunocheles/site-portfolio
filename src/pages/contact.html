@@ -6,37 +6,17 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../css/preloader.css">
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
-    <script type="text/javascript" src="../js/cmds.js"></script>
     <title>brunocheles</title>
 </head>
-<body>
-    <header class="header-menu">
-        <div class="grid nav-header grid-col-131">
-            <div class="progresso">
-                <div class="barra-progresso">
-                    
-                </div>
-            </div>
-            <h1 class="titulo">
-                <a href="../index.html">BrunoCheles</a>
-            </h1>
-            <nav class="menu">
-                <div class="menu-mobile">
-                    <input type="checkbox" name="toggle" id="toggle">
-                    <label for="toggle" id="menu-icons" onclick="hideMenuMobile()"></label>
-                </div>
-                
-                <ul class="flex menu-base">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./about.html">Sobre</a></li>
-                    <li><a href="./projects.html">Projetos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
+<body onload="preLoad(); generateHeaderAndFooter(); actualPage();">
+    <div id="preloader"></div>
+
+    <header class="header-menu container" id="header"></header>
+
+    <main class="container">
         <section id="contato" class="grid grid-col-131">
             <div class="contato flex">
                 <div class="dadosContato">
@@ -47,26 +27,30 @@
                 </div>
                 <div class="dadosSugestoes">
                     <form action="" method="get">
-                        <div id="emailENome">
+                        <div id="nomeEsobrenome">
                             <p class="nome">
                                 <label for="name">Nome *</label> <br>
                                 <input type="text" name="name" id="name" placeholder="Insira seu nome" required>
                             </p>
-                            <p class="email">
-                                <label for="email">Email *</label> <br>
-                                <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                            <p class="sobrenome">
+                                <label for="sobrenome">Sobrenome</label> <br>
+                                <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome">
                             </p>
                         </div>
+                        <p class="email">
+                            <label for="email">Email *</label> <br>
+                            <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                        </p>
                         <p>
                             <label for="tel">Telefone</label> <br>
                             <input type="tel" name="tel" id="tel" placeholder="Insira seu telefone">
                         </p>
                         <p>
-                            <label for="assunto">Assunto</label> <br>
+                            <label for="assunto">Assunto *</label> <br>
                             <input type="text" name="assunto" id="assunto" placeholder="Insira o assunto" required>
                         </p>
                         <p>
-                            <label for="msg">Mensagem</label> <br>
+                            <label for="msg">Mensagem *</label> <br>
                             <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Insira sua mensagem" required></textarea>
                         </p>
                         <input type="button" value="Enviar">
@@ -77,24 +61,11 @@
         </section>
     </main>
 
-    <footer class="page-footer">
-        <div class="grid grid-col-131">
-            <div class="foot flex">
-                <div class="foot-marca">
-                    <h4>brunocheles</h4>
-                    <p>bruno.cheles@outlook.com</p>
-                    <p><span>brunocheles&copy;</span> 2023 - criado por Bruno Cheles</p>
-                </div>
-                
-                <nav class="social-media">
-                    <h4>Redes Sociais</h4>
-                    <ul class="flex">
-                        <li><a href="#"><img src="../img/icon-linkedin-white.svg" alt="LinkedIn"></a></li>
-                        <li><a href="#"><img src="../img/icon-github-white.svg" alt="GitHub"></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </footer>
+    <footer class="page-footer container" id="footer"></footer>
+    <!-- Scripts -->
+    <script type="text/javascript" src="../js/cmds.js"></script>
+    <script defer src="../js/header&footer.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

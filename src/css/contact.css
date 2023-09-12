@@ -5,15 +5,16 @@
 }
 #contato p, #contato a {
     font-size: 1rem;
-    margin: 0.5rem 0;
-    padding: 0.2rem;
+    margin: 0.8rem 0;
+    padding: 0.2rem 0;
 }
 #contato a:hover {
-    font-size: 1.1rem;
-    background-color: #f7f7f7;
+    color: rgba(51, 52, 63, 0.8);
+    font-weight: 700;
+    transition: 100ms linear;
 }
 .dadosContato {
-    text-align: left;
+    text-align: center;
     grid-column: 1;
 }
 .dadosContato h3 {
@@ -29,7 +30,7 @@
 .dadosSugestoes #tel, .dadosSugestoes #assunto, .dadosSugestoes #msg {
     width: 100%;
 }
-#emailENome{
+#nomeEsobrenome{
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -40,26 +41,31 @@
 #email, #name, .nome, .email {
     width: 100%;
 }
+.dadosSugestoes textarea {
+    margin-top: 0.2rem;
+}
 .dadosSugestoes input, .dadosSugestoes textarea {
     border-bottom: 0.1rem solid #33343F;
+    border-top: 0.1rem solid #FEFEFE;
+    border-left: 0.1rem solid #FEFEFE;
+    border-right: 0.1rem solid #FEFEFE;
+    border-radius: 0.2rem;
+    transition: border 200ms linear;
 }
 .dadosSugestoes input:hover, .dadosSugestoes textarea:hover {
     border: 0.1rem solid #33343F;
-    transition: 250ms linear;
-    border-radius: 0.2rem;
-    font-size: 1rem;
 }
 .dadosSugestoes input:focus, .dadosSugestoes textarea:focus {
-    font-size: 1rem;
+    outline: none;
     border: 0.1rem solid #33343F;
     border-radius: 0.2rem;
 }
 .dadosSugestoes input[type=button] {
-    border-bottom: none;
+    border: none;
+    transition: 200ms linear;
 }
 .dadosSugestoes input[type=button]:focus, .dadosSugestoes input[type=button]:hover{
     border: none;
-    transition: none;
     cursor: pointer;
     background-color: rgba(51, 52, 63, 0.8);
 }

@@ -2,6 +2,11 @@
 :root {
     --counter: "70%";
 }
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 h1, h2, h3, h4, h5, a, p, article, input, textarea {
     color: #33343F;
     font-family: 'Avenir Light', Helvetica, sans-serif;
@@ -115,71 +120,9 @@ a, p {
     font-size: 0.9rem;
     font-weight: 500;
 }
-.menu-base li > a:hover {
+.menu-base li > a:hover, .page-activated {
     border-bottom: 2px solid #72748C;
     color: #72748C;
-}
-/* COnfiguração Barra de Progresso */
-.progresso {
-    width: 70%;
-    height: 1.1rem;
-    grid-column: 1/-1;
-}
-.progresso::before {
-    content: " SITE EM DESENVOLVIMENTO. PROGRESSO ATUAL:";
-    color: red;
-    display: block;
-    text-align: right;
-    padding-right: 20%;
-}
-.barra-progresso {
-    height: 100%;
-    background-color: #34E340;
-    animation-name: barra;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-}
-.barra-progresso::after {
-    content: var(--counter);
-    font-size: 1rem;
-    display: block;
-    text-align: right;
-    padding: 0.05rem 0.2rem 0 0;
-    color: #FAFBFF;
-}
-@keyframes barra {
-    0% {
-        width: 0;
-        --counter: "0%";
-    }
-    10% {
-        width: 15%;
-        --counter: "10%";
-    }
-    20% {
-        width: 28%;
-        --counter: "20%";
-    }
-    30% {
-        width: 42%;
-        --counter: "30%";
-    }
-    40% {
-        width: 57%;
-        --counter: "40%";
-    }
-    50% {
-        width: 71%;
-        --counter: "50%";
-    }
-    60% {
-        width: 85%;
-        --counter: "60%";
-    }
-    70% {
-        width: 100%;
-        --counter: "70%";
-    }
 }
 
 /* Configuração de Seções */
