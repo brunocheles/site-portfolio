@@ -120,18 +120,19 @@ function geraFrases() {
 }
 /* Eventos */
 window.addEventListener('load', () => {
-    geraHeaderAndFooter();
-
     let url_atual = window.location.href;
     let url_div = url_atual.split("/");
     let page = url_div.pop();
     switch (page){
         case "about.html":
+            geraHeaderAndFooter();
             geraCursos();
             break;
         case "contact.html":
+            geraHeaderAndFooter();
             break;
         case "projects.html":
+            geraHeaderAndFooter();
             break;
         default:
             //geraFrases();
