@@ -1,27 +1,21 @@
-function hideMenuMobile() {
-    let checkbox = document.getElementById("toggle");
-
-    if(checkbox.checked) {
-        document.getElementById("navMenu").classList.add("hideMenuMobile");
-    }else {
-        document.getElementById("navMenu").classList.remove("hideMenuMobile");
-    }
+/* Funções */
+function activeMenuMobile() {
+    let menu = document.getElementById("nav-menu");
+    let hamburger = document.getElementById("hamburger");
+    menu.classList.toggle("activeMenuMobile");
+    hamburger.classList.toggle("active");
 }
-
 function showTextProj(element) {
     element[0].classList.remove("hidden");
 }
-
 function hideTextProj(element) {
     element[0].classList.add("hidden");
 }
-
 function actualPage() {
     let url_atual = window.location.href;
     let url_div = url_atual.split("/");
     let page = url_div.pop();
-
-    let menu_itens = document.getElementsByClassName("menu-btn");
+    let menu_itens = document.getElementsByClassName("menu-item");
 
     switch (page) {
         case "about.html":
@@ -50,14 +44,36 @@ function actualPage() {
             break;
     }
 }
+function isSmallScreen() {
+    let screenSize = window.screen.width;
+    let isGrid = document.getElementsByClassName("grid");
+    let isGridCol = document.getElementsByClassName("grid-col-131");
 
-function preLoad() {
-    let pre_load = document.getElementById("preloader");
-    pre_load.innerHTML = (`
-        <div id="status">&nbsp;</div>
-        <div class="loader">
-            <span class="loader-pin"></span>
-            <span class="loader-title">Carregando...</span>
-        </div>
-    `);
+    if(screenSize < 900) {
+        for(item of isGrid) {
+            item.classList.remove("grid");
+            item.classList.add("flex");
+        };
+        for(item of isGridCol) {
+            item.classList.remove("grid-col-131");
+        };
+    } else {
+        for(item of isGrid) {
+            item.classList.add("grid");
+            item.classList.remove("flex");
+        };
+        for(item of isGridCol) {
+            item.classList.add("grid-col-131");
+        };
+    }
 }
+
+window.addEventListener('load', () => {
+    actualPage();
+});
+window.addEventListener('resize', function () {
+    //isSmallScreen();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    //isSmallScreen();
+})

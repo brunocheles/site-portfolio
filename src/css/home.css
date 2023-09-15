@@ -1,68 +1,59 @@
 /* Configuração de Inicio */
-.apresentacao {
-    margin-bottom: 8rem;
-    padding: 3rem 0;
-}
 .apres-content {
-    justify-content: center;
+    width: 60%;
+    margin: 5rem 0 14rem 0;
+}
+.apres-content h5 {
     text-transform: uppercase;
 }
-.apres-content h3{
-    margin-top: 1.5rem;
-    width: 60%;
-    line-height: 2.5rem;
-}
-main a {
-    display: inline-block;
-    font-size: 0.9rem;
-    color: #33343F;
-    border: 2px solid #33343F;
-    padding: 1.3rem 3rem;
+.apres-content h3 {
+    text-transform: uppercase;
+    font-weight: 600;
     margin-top: 2rem;
-    transition: ease-in-out 200ms;
-    border-radius: 3px;
 }
-main a:hover{
+/* Configuração Frases Motivacionais */
+#frases-motivacionais {
     background-color: #33343F;
-    color: #FEFEFE;
 }
-.about-preview h4 {
-    width: 55%;
+.blocos-frases-motivacionais {
+    padding-top: 14rem;
+    color: #FAFBFF;
 }
-.frases-motivacionais {
-    background-color: #33343F;
-    padding: 10rem 0 1rem 0;
-}
-.frases-motivacionais p {
-    color: #FEFEFE;
-}
-.frases-motivacionais p:first-child {
-    font-size: 1.5rem;
+.blocos-frases-motivacionais > p:first-of-type {
+    font-size: 2.5rem;
+    font-weight: 600;
     text-align: center;
-    padding-bottom: 8.5rem;
+    text-transform: uppercase;
+    margin-bottom: 12.5rem;
 }
-
+.blocos-frases-motivacionais > p:last-of-type {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
 /* Configuração de Preview de Projetos */
-#projects-prev {
+#projects-preview {
     background-color: #FAFBFF;
-    padding: 3rem 0;
 }
-.projects-preview {
-    grid-column: 2;
+.projects-content {
+    flex-direction: column;
+}
+.about-preview {
+    width: 60%;
 }
 .lista-linguagens {
-    margin-top: 0.7rem;
-    width: 50%;
+    margin: 0.5rem 0;
     justify-content: center;
 }
-.lista-linguagens > li ~ li {
-    margin-left: 0.2rem;
+.lista-linguagens li img{
+    width: 4rem;
+    height: 4rem;
 }
-.lista-linguagens > li > img {
-    height: 2.5rem;
+.lista-linguagens li ~ li {
+    margin-left: 1rem;
 }
 .all-proj-btn {
     text-align: center;
+    margin-top: 3rem;
 }
 #blocos-projetos {
     justify-content: space-around;
@@ -72,7 +63,7 @@ main a:hover{
     width: 150pt;
     height: 150pt;
     position: relative;
-    transition: ease-in-out 200ms;
+    transition: 200ms ease-in-out;
 }
 .bloco:hover {
     transform: scale(1.1);
@@ -83,7 +74,7 @@ main a:hover{
     background-color: rgba(51,52,63,0.7);
     position: absolute;
     bottom: 0;
-    transition: ease-in-out 200ms;
+    transition: 200ms ease-in-out;
 }
 .bloco > div > p {
     text-align: center;
@@ -99,21 +90,35 @@ main a:hover{
 .bootcamp-santander {
     background: no-repeat center/95% url(https://hermes.dio.me/tracks/afebe5ed-2b18-438a-95b0-2c971e9aeff9.png);
 }
-.ribeirao-em-cena {
+.ribeirao-encena {
     background: no-repeat center/95% url(../img/ribeirao-encena.svg);
 }
-
-/* Configurações do Preview de Contato */
-.to-contact {
-    padding: 3rem 0;
-}
+/* Configuração de Preview de Contato */
 .contact-preview {
-    grid-column: 2;
     text-align: center;
-    justify-content: center;
 }
 .contact-preview > p {
-    width: 50%;
-    display: inline-block;
-    margin-top: 2rem;
+    margin: 2rem 20%;
+}
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
+    .apres-content, .about-preview {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 899px) {
+    #blocos-projetos {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloco {
+        width: 210pt;
+        height: 210pt;
+        position: relative;
+        transition: 200ms ease-in-out;
+    }
+    .apres-content, .about-preview  {
+        width: 100%;
+        margin: 0;
+    }
 }

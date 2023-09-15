@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/about.css">
-    <link rel="stylesheet" type="text/css" href="../css/preloader.css">
-    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
-    <title>brunocheles</title>
+    <!-- Estilo -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/animacoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <!------------>
+    <title>BRUNOCHELES</title>
 </head>
-
-<body onload="preLoad(); generateHeaderAndFooter(); actualPage();">
-    <div id="preloader"></div>
-
-    <header class="header-menu container" id="header"></header>
+<body class="container">
+    <header class="container">
+        <div class="header-line"></div>
+        <nav id="page-header" class="flex"></nav>
+    </header>
 
     <main class="container">
         <section id="conhecimento">
-            <div class="grid grid-col-131">
-                <div class="conhecimento flex">
-                    <div class="con-texto">
-                        <h5>Olá, eu sou o <b>Bruno</b>.</h5>
-                        <h3>Sou Desenvolvedor Fullstack, com conhecimento nas linguagens:</h3>
-                        <table>
+            <div class="grid">
+                <div class="grid-col2 conhecimento flex">
+                    <div class="con-texto container">
+                        <h5 data-anima="centro">Olá, eu sou o <b>Bruno</b>.</h5>
+                        <h3 data-anima="centro">Sou Desenvolvedor Fullstack, com conhecimento nas linguagens:</h3>
+                        <table data-anima="centro">
                             <thead>
                                 <tr class="tb-title">
                                     <th colspan="5">Conhecimento Linguagens</th>
@@ -70,7 +74,9 @@
                                 </tr>
                                 <tr>
                                     <td class="tb-info">Mobile</td>
-                                    <td></td>
+                                    <td>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" title="React"/>
+                                    </td>
                                     <td>
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="flutter" title="flutter"/>
                                     </td>
@@ -96,21 +102,22 @@
                         </table>
                     </div>
 
-                    <div class="con-img">
+                    <div class="con-img" data-anima="centro">
                         <img src="../img/img-eu.jpg" alt="">
                     </div>   
                 </div>
             </div>
         </section>
+
         <section id="sobre">
-            <div class="grid grid-col-131">
-                <div class="sobre grid">
-                    <h2 class="sec-title">sobre mim</h2>
-                    <article>
+            <div class="grid">
+                <div class="sobre grid-col2 flex">
+                    <h2 class="sec-title" data-anima="centro">sobre mim</h2>
+                    <article data-anima="centro">
                         <p>Sou uma pessoa calma e autodidata, estou sempre à procura de desenvolver minhas habilidades. Gosto de estar sempre ajudando e aprendendo novas tecnologias.<br>Também gosto de praticar esportes, jogos eletrônicos e de arte. Sou ator a 10 anos, mas me encontrei profissionalmente na área da Tecnologia.<br>Meus estudos estão focados nas linguagens: Flutter, Java, Javascript, Angular e C#.</p>
                     </article>
-                    <h3>Principais Hobbies</h3>
-                    <div class="hobbie1 flex flex-row-reverse">
+                    <h3 data-anima="centro">Principais Hobbies</h3>
+                    <div class="hobbie1 flex row-reverse" data-anima="centro">
                         <article>
                             <h4>Teatro</h4>
                             <p>Entrei no teatro com 13 anos de idade e me mantive dentro da área até o ano de 2022, quando dei uma pausa para poder organizar minha vida.<br>Por todos esses anos fiz várias apresentações por Ribeirão Preto e região.<br>Como sou da área de programação, um dos meus projetos é fazer algo que ajude a área e fomente essa cultura teatral para todos. Com isso, estou desenvolvendo o projeto Ribeirão em Cena para poder tornar mais fácil essa ligação entre Teatro com as pessoas.<br>
@@ -119,7 +126,7 @@
                             <div class="hobbie-img"></div>
                         </aside>
                     </div>
-                    <div class="hobbie2 flex flex-row">
+                    <div class="hobbie2 flex" data-anima="centro">
                         <article>
                             <h4>Bateria</h4>
                             <p>Ainda dentro da área da cultura, eu sempre gostei muito de música. Com 9 anos comecei a aprender a tocar violão na qual fiquei por 3 anos fazendo curso, porém meu instrumento favorito sempre foi a bateria.<br>Assim que consegui meu primeiro emprego e ganhei meu primeiro salário, eu me inscrevi no curso de bateria. Com certeza uma das minhas pequenas conquistas que mais me senti feliz.<br>Infelizmente com a pandemia eu tive que dar uma pausa no curso, mas pretendo voltar logo logo.</p>
@@ -133,13 +140,14 @@
             <video src="#"></video>
             -->
         </section>
+
         <section id="curriculo">
-            <h2 class="sec-title">Currículo</h2>
-            <h4 class="sub-title">Principais Experiências Profissionais</h4>
-            <section class="experienca-pro">
-                <div class="grid grid-col-131">
-                    <div class="expro grid">
-                        <div class="expro1 flex flex-row-reverse">
+            <h2 class="sec-title" data-anima="centro">Currículo</h2>
+            <h4 class="sub-title" data-anima="centro">Principais Experiências Profissionais</h4>
+            <div class="experienca-pro">
+                <div class="grid">
+                    <div class="expro grid-col2">
+                        <div class="expro1 flex row-reverse" data-anima="centro">
                             <article>
                                 <p>Desenvolvia e fazia melhorias em scripts e procedures para um dos sistemas da empresa usando a linguagem T-SQL do banco de dados SQL Server.</p>
                             </article>
@@ -149,7 +157,7 @@
                                 <p class="expro-cargo">Desenvolvedor SQL Server Júnior</p>
                             </aside>
                         </div>
-                        <div class="expro2 flex">
+                        <div class="expro2 flex" data-anima="centro">
                             <article>
                                 <p>Realizava criação de novos scripts para serem utilizados no Banco de Dados SQL Server, ajudava a equipe de design com os códigos HTML/CSS e dava suporte aos professores e alunos quanto às dúvidas e solicitações dentro do Portal.</p>
                             </article>
@@ -159,19 +167,19 @@
                                 <p class="expro-cargo">Programador AVA Júnior</p>
                             </aside>
                         </div>
-                        <div class="expro3 flex flex-row-reverse">
+                        <div class="expro3 flex row-reverse" data-anima="centro">
                             <article>
-                                <p>Dava aula para crianças e adolescentes no curso voltado para programação. Dentre os ensinos estão: Raciocínio Lógico, desenvolvimento de programas, apps e jogos.</p>
+                                <p>Lecionava e instruia para crianças e adolescentes no curso voltado para programação. Dentre os ensinos estão: Raciocínio Lógico, desenvolvimento de programas, apps e jogos.</p>
                             </article>
                             <aside>
                                 <p class="expro-title">CodeBuddy</p>
                                 <p class="expro-data">Jul/2019 a Ago/2020</p>
-                                <p class="expro-cargo">Instrutor de programação</p>
+                                <p class="expro-cargo">Instrutor de Programação</p>
                             </aside>
                         </div>
-                        <div class="expro4 flex">
+                        <div class="expro4 flex" data-anima="centro">
                             <article>
-                                <p>Dava suporte para as empresas clientes, ajudando tanto na questão de Cartões de Ponto, problema de conexão com o Relógio e outros problemas.</p>
+                                <p>Realizava o suporte para as empresas clientes, ajudando tanto na questão de Cartões de Ponto, problema de conexão com o Relógio e outros problemas.</p>
                             </article>
                             <aside>
                                 <p class="expro-title">Starponto</p>
@@ -181,9 +189,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="formacao" class="grid grid-col-131">
-                <div class="formacao flex">
+            </div>
+            <div id="formacao" class="grid" data-anima="centro">
+                <div class="formacao grid-col2 flex">
                     <div class="form-acad">
                         <h3>Formação Acadêmica</h3>
                         <p class="expro-title">Descomplica</p>
@@ -193,21 +201,20 @@
                     <div class="sep-vert"></div>
                     <div class="cursos">
                         <h3>Cursos</h3>
-                        <div class="blocos-cursos grid">
-    
-                        </div>
+                        <div id="blocos-cursos" class="flex"></div>
                     </div>
                 </div>
                 
-            </section>
+            </div>
         </section>
     </main>
 
-    <footer class="page-footer container" id="footer"></footer>
+    <footer class="container">
+        <div id="page-footer" class="flex"></div>
+    </footer>
     <!-- Scripts -->
-    <script type="text/javascript" src="../js/cmds.js"></script>
-    <script defer src="../js/header&footer.js"></script>
-    <script src="../js/jquery.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/generateItems.js"></script>
+    <script src="../js/cmds.js"></script>
+    <script src="../js/animations.js"></script>
 </body>
 </html>

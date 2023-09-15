@@ -1,11 +1,18 @@
-/* Configuração inicial */
+/* Configuração geral */
 .sec-title {
-    padding-top: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 2rem;
 }
+.row-reverse {
+    flex-direction: row-reverse;
+}
+/* Configuração Início */
 .conhecimento {
-    grid-column: 2;
     margin-top: 3rem;
     padding-bottom: 2rem;
+    justify-content: center;
 }
 .con-texto > h3{
     text-align: left;
@@ -15,48 +22,50 @@
     margin-left: 3rem;
 }
 .con-img img {
-    width: 26rem;
-    border-radius: 3px;
+    width: 35rem;
+    border-radius: 0.2rem;
 }
 /* Configuração da tabela */
 table {
     overflow: hidden;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
+    -webkit-border-radius: 0.2rem;
+       -moz-border-radius: 0.2rem;
+            border-radius: 0.2rem;
 }
 .tb-title {
     background-color: #33343F;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #FAFBFF;
-    border: 2px solid #72748C;
+    border: 0.2rem solid #72748C;
     text-transform: uppercase;
 }
 .tb-title th {
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
 }
 .tb-info {
     background-color: #33343F;
     color: #FAFBFF;
-    border: 2px solid #72748C;
+    border: 0.2rem solid #72748C;
     text-transform: uppercase;
     text-align: center;
-    padding: 0.2rem;
+    padding: 0 1rem;
+    font-size: 1.3rem;
 }
+
 tbody .tb-info {
     margin: auto;
 }
 .tb-info > th {
-    border: 2px solid #72748C;
-    padding: 0.2rem;
+    border: 0.2rem solid #72748C;
+    padding: 0.5rem;
 }
 tbody tr td {
     background-color: #FAFBFF;
-    border: 2px solid #72748C;
+    border: 0.2rem solid #72748C;
     text-align: center;
 }
 tbody td img {
-    width: 2rem;
+    width: 3.5rem;
     vertical-align: middle;
     margin: auto;
     padding: 0.2rem 0;
@@ -64,25 +73,24 @@ tbody td img {
 /* Configuração de Sobre */
 #sobre {
     background-color: #33343F;
+    color: #FAFBFF;
 }
 .sobre {
-    grid-column: 2;
-    padding-bottom: 2rem;
+    flex-direction: column;
 }
-.sobre .sec-title {
-    color: #FAFBFF;
+.sobre article {
+    line-height: 1.8rem;
 }
-.sobre p {
-    color: #FAFBFF;
+.sobre article p {
+    font-weight: 300;
 }
 .sobre h3, .sobre h4 {
     text-align: center;
-    color: #FAFBFF;
 }
 .sobre h3{
     margin: 2rem 0;
 }
-.sobre article h4 {
+.sobre h4 {
     margin-bottom: 1rem;
 }
 .hobbie1 {
@@ -91,7 +99,7 @@ tbody td img {
 .hobbie-img, .hobbie-img2 {
     height: 220pt;
     width: 170pt;
-    border-radius: 3px;
+    border-radius: 0.2rem;
 }
 .hobbie-img {
     background: no-repeat left 10%/100% url(../img/img-teatro.jpg);
@@ -105,7 +113,6 @@ tbody td img {
 .hobbie2 article p {
     margin-right: 2rem;
 }
-
 /* Configuração de Curriculo */
 #curriculo {
     background-color: #FAFBFF;
@@ -119,98 +126,224 @@ tbody td img {
 .sub-title {
     color: #72748C;
     text-align: center;
-    padding-bottom: 2rem;
-}
-.expro {
-    grid-column: 2;
+    padding-bottom: 5rem;
 }
 .expro aside {
-    width: 25rem;
-    min-width: 16rem;
+    width: 35rem;
+    min-width: 26rem;
+    font-weight: 500;
 }
 .expro > div ~ div {
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 .expro article {
-    display: flex;
-}
-.expro article p {
     color: #72748C;
+    font-weight: 500;
+    display: flex;
 }
 .expro1 article::before, .expro3 article::before {
     content: "";
     height: 100%;
     display: block;
-    border: 0.15rem solid #33343F;
-    border-radius: 3px;
+    border: 0.2rem solid #33343F;
+    border-radius: 0.2rem;
     margin: 0 1rem;
 }
 .expro2 article::after, .expro4 article::after {
     content: "";
     height: 100%;
     display: block;
-    border: 0.15rem solid #33343F;
-    border-radius: 3px;
+    border: 0.2rem solid #33343F;
+    border-radius: 0.2rem;
     margin: 0 1rem;
-} 
-.expro1 aside, .expro3 aside {
+}
+.expro2 article, .expro4 article {
+    margin-left: 20rem;
+}
+.expro1 article, .expro3 article {
+    margin-right: 20rem;
+}
+.expro1 aside, .expro3 aside, .expro2 article, .expro4 article{
     text-align: right;
 }
 .expro2 aside, .expro4 aside {
     text-align: left;
 }
 .expro-title {
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 2.8rem;
     text-transform: uppercase;
     font-weight: 600;
+    position: relative;
 }
 .expro-title::after {
     content: "";
     width: 100%;
-    height: 0.2rem;
     display: block;
-    background-color: #33343F;
-    border-radius: 3px;
+    border: 0.15rem solid #33343F;
+    border-radius: 0.2rem;
+    position: absolute;
 }
 .expro-data {
-    font-size: 0.9rem;
-    padding: 0.1rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.4rem 0;
 }
-
+.expro-cargo {
+    font-size: 2rem;
+}
 /* Configuração Formação Acadêmica */
-#formacao {
-    background-color: #fefefe;
-}
 .formacao {
-    grid-column: 2;
-    justify-content: center;
-    padding: 2rem 0;
+    justify-content: space-between;
+    padding-top: 5rem;
 }
 .sep-vert {
     height: 100%;
     display: block;
-    border: 0.15rem solid #33343F;
-    border-radius: 3px;
+    border: 0.2rem solid #33343F;
+    border-radius: 0.2rem;
     margin: 0 1rem;
 }
-.form-acad > h3, .form-acad > .expro-data, .form-acad > .expro-cargo, .form-acad > .expro-title {
+.form-acad {
+    width: 50%;
     text-align: right;
-}
-.form-acad > h3, .cursos > h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding-bottom: 1.5rem;
-}
-.cursos > h3{
-    text-align: left;
 }
 .form-acad > p {
     color: #72748C;
 }
-.form-acad .expro-title::after {
-    background-color: #72748C;
+.form-acad .expro-title {
+    font-size: 2.4rem;
 }
-.blocos-cursos {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.form-acad .expro-title::after {
+    border-color: #72748C;
+}
+.cursos {
+    width: 50%;
+}
+.form-acad > h3, .cursos > h3 {
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+#blocos-cursos {
+    flex-wrap: wrap;
+    max-width: 40rem;
+
+}
+.curso {
+    padding: 0.2rem;
+}
+.curso, .curso > img {
+    width: 4rem;
+}
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
+
+}
+@media only screen and (max-width: 899px) {
+    .conhecimento {
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con-img {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+    table {
+        max-width: 1rem;
+        margin: 0 auto;
+    }
+    .expro1 article, .expro3 article , .expro2 article, .expro4 article {
+        margin: 0 auto;
+    }
+    .tb-title {
+        font-size: 1.2rem;
+    }
+    .tb-info {
+        font-size: 0.8rem;
+    }
+    tbody td img {
+        width: 2rem;
+        vertical-align: middle;
+        margin: auto;
+        padding: 0.2rem 0;
+    }
+    .con-img img {
+        width: 25rem;
+        border-radius: 0.2rem;
+    }
+    .row-reverse, .hobbie2 {
+        flex-direction: column;
+    }
+    .hobbie1 article p{
+        margin-left: 0;
+    }
+    .hobbie2 article p {
+        margin-right: 0;
+    }
+    .hobbie-img, .hobbie-img2 {
+        height: 200pt;
+        margin: 0 auto;
+    }
+    .expro div ~ div::after {
+        content: "";
+        width: 100%;
+        display: block;
+        border: 0.15rem solid #33343F;
+        border-radius: 0.2rem;
+        margin-bottom: 4rem;
+    }
+    .expro div{
+        flex-direction: column-reverse !important;
+    }
+    .formacao {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .expro aside, .expro article {
+        text-align: center !important;
+        width: 100%;
+    }
+    .expro-title {
+        font-size: 2.3rem !important;
+    }
+    .expro-data {
+        font-size: 1.1rem !important;
+    }
+    .expro-cargo {
+        font-size: 1.8rem !important;
+    }
+    .expro1 article::before, .expro3 article::before , .expro2 article::after, .expro4 article::after,.expro-title::after {
+        display: none;
+    }
+    .form-acad > h3, .cursos > h3 {
+        padding-bottom: 1.5rem;
+        font-size: 2.3rem;
+    }
+    .sep-vert {
+        width: 100%;
+        display: block;
+        border: 0.2rem solid #33343F;
+        border-radius: 0.2rem;
+        margin: 0 1rem;
+    }
+    .form-acad {
+        width: 100%;
+        text-align: left;
+    }
+    .form-acad > p {
+        color: #72748C;
+    }
+    .form-acad .expro-title {
+        font-size: 1.8rem !important;
+    }
+    .form-acad .expro-cargo {
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem;
+    }
+    .cursos {
+        width: 100%;
+        margin-top: 1rem;
+    }
 }

@@ -1,0 +1,11 @@
+[data-anima] {
+    opacity: 0;
+    transition: 800ms;
+}
+[data-anima = "centro"] {
+    transform: translate3d(0,10px,0);
+}
+[data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}

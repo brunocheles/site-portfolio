@@ -3,48 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/projects.css">
-    <link rel="stylesheet" type="text/css" href="../css/preloader.css">
-    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
-    <title>brunocheles</title>
+    <!-- Estilo -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/animacoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <!------------>
+    <title>BRUNOCHELES</title>
 </head>
-<body onload="preLoad(); generateHeaderAndFooter(); actualPage();">
-    <div id="preloader"></div>
-
-    <header class="header-menu container" id="header"></header>
+<body class="container">
+    <header class="container">
+        <div class="header-line"></div>
+        <nav id="page-header" class="flex"></nav>
+    </header>
 
     <main class="container">
-        <section id="projetos" class="grid grid-col-131">
-            <div class="projetos">
-                <h3 class="sec-title">Projetos Pessoais</h3>
-                <div id="blocos-projetos" class="flex flex-row">
-                    <div class="bloco my-contab" onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
-                        <div class="text-img-proj hidden teste1">
-                            <p>MyContab</p>
-                        </div>
-                    </div>
-                    <div class="bloco bootcamp-santander" onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
-                        <div class="text-img-proj hidden">
-                            <p>Bootcamp<br>Santander</p>
-                        </div>
-                    </div>
-                    <div class="bloco ribeirao-em-cena"  onmouseover="showTextProj(this.children)" onmouseout="hideTextProj(this.children)">
-                        <div class="text-img-proj hidden">
-                            <p>Ribeirão<br>em Cena</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
 
-    <footer class="page-footer container" id="footer"></footer>
+    <footer class="container">
+        <div id="page-footer" class="flex"></div>
+    </footer>
     <!-- Scripts -->
-    <script type="text/javascript" src="../js/cmds.js"></script>
-    <script defer src="../js/header&footer.js"></script>
-    <script src="../js/jquery.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/generateItems.js"></script>
+    <script src="../js/cmds.js"></script>
+    <script src="../js/animations.js"></script>
 </body>
 </html>

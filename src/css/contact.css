@@ -1,75 +1,102 @@
 /* Configuração de Contato */
 .contato {
-    grid-column: 2;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-#contato p, #contato a {
-    font-size: 1rem;
-    margin: 0.8rem 0;
+.contato a {
+    border: none;
+    transition: 100ms ease-in-out;
+}
+.contato a:hover {
+    background-color: #FEFEFE;
+    color: #33343F;
+    font-weight: 600;
+}
+.contato p, .contato a {
+    margin: 0.2rem 0;
     padding: 0.2rem 0;
-}
-#contato a:hover {
-    color: rgba(51, 52, 63, 0.8);
-    font-weight: 700;
-    transition: 100ms linear;
+    font-size: 1.8rem;
 }
 .dadosContato {
     text-align: center;
     grid-column: 1;
+    width: 50%;
 }
 .dadosContato h3 {
+    font-weight: 500;
     text-transform: uppercase;
     padding-bottom: 2rem;
 }
 .dadosSugestoes {
     grid-column: 2;
+    font-weight: 500;
 }
 .dadosSugestoes > p {
     text-align: center;
 }
-.dadosSugestoes #tel, .dadosSugestoes #assunto, .dadosSugestoes #msg {
+#tel, #email, #assunto, #msg {
     width: 100%;
 }
 #nomeEsobrenome{
-    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-#contato .dadosSugestoes .nome{
-    margin-right: 1rem;
-}
-#email, #name, .nome, .email {
-    width: 100%;
-}
-.dadosSugestoes textarea {
-    margin-top: 0.2rem;
+    justify-content: space-between;
 }
 .dadosSugestoes input, .dadosSugestoes textarea {
-    border-bottom: 0.1rem solid #33343F;
-    border-top: 0.1rem solid #FEFEFE;
-    border-left: 0.1rem solid #FEFEFE;
-    border-right: 0.1rem solid #FEFEFE;
+    border-bottom: 0.2rem solid #33343F;
+    border-top: 0.2rem solid #FEFEFE;
+    border-left: 0.2rem solid #FEFEFE;
+    border-right: 0.2rem solid #FEFEFE;
+    transition: 200ms ease-in-out;
+    background-color: #FEFEFE;
     border-radius: 0.2rem;
-    transition: border 200ms linear;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
 .dadosSugestoes input:hover, .dadosSugestoes textarea:hover {
-    border: 0.1rem solid #33343F;
+    border: 0.2rem solid #33343F;
 }
 .dadosSugestoes input:focus, .dadosSugestoes textarea:focus {
     outline: none;
-    border: 0.1rem solid #33343F;
+    border: 0.2rem solid #33343F;
     border-radius: 0.2rem;
 }
+#msg {
+    margin-top: 0.2rem;
+    resize: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 .dadosSugestoes input[type=button] {
     border: none;
+    background-color: #33343F;
+    color: #FAFBFF;
+    padding: 1.5rem 3rem;
     transition: 200ms linear;
+    width: 100%;
 }
 .dadosSugestoes input[type=button]:focus, .dadosSugestoes input[type=button]:hover{
     border: none;
     cursor: pointer;
     background-color: rgba(51, 52, 63, 0.8);
 }
-#msg {
-    resize: none;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+@media only screen and (max-width: 899px) {
+    .contato {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato p, .contato a {
+        font-size: 1.3rem;
+    }
+    .dadosContato {
+        text-align: center;
+        width: 100%;
+    }
+    .dadosSugestoes {
+        margin-top: 3rem;
+    }
+    .dadosSugestoes input, .dadosSugestoes textarea {
+        font-size: 1.1rem !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
