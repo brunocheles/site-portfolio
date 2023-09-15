@@ -18,6 +18,18 @@
     <header class="container">
         <div class="header-line"></div>
         <nav id="page-header" class="flex">
+            <a href="" id="logo">BRUNOCHELES</a>
+            <button id="menu-mobile" onclick="activeMenuMobile();">
+                <span id="hamburger"></span>
+            </button>
+            <nav id="nav-menu">
+                <ul id="menu" class="flex">
+                    <li><a class="menu-item" href="./pages/index.html">Início</a></li>
+                    <li><a class="menu-item" href="./pages/about.html">Sobre</a></li>
+                    <li><a class="menu-item" href="./pages/projects.html">Projetos</a></li>
+                    <li><a class="menu-item" href="./pages/contact.html">Contato</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
 
@@ -65,7 +77,25 @@
     </main>
 
     <footer class="container">
-        <div id="page-footer" class="flex"></div>
+        <div id="page-footer" class="flex">
+            <div class="foot-marca">
+                <h4>brunocheles</h4>
+                <p>bruno.cheles@outlook.com</p>
+                <p><span>brunocheles&copy;</span> 2023 - criado por Bruno Cheles</p>
+            </div>
+    
+            <nav class="social-media">
+                <h4>Redes Sociais</h4>
+                <ul class="flex">
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/brunocheles/"><img src="./img/icon-linkedin-white.svg" alt="LinkedIn"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/brunocheles/"><img src="./img/icon-github-white.svg" alt="GitHub"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     <!-- Scripts -->
     <script src="../js/generateItems.js"></script>

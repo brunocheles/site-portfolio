@@ -29,7 +29,7 @@ function geraHeaderAndFooter() {
         </button>
         <nav id="nav-menu">
             <ul id="menu" class="flex">
-                <li><a class="menu-item" href="./index.html">Início</a></li>
+                <li><a class="menu-item" href="../index.html">Início</a></li>
                 <li><a class="menu-item" href="./about.html">Sobre</a></li>
                 <li><a class="menu-item" href="./projects.html">Projetos</a></li>
                 <li><a class="menu-item" href="./contact.html">Contato</a></li>
